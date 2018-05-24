@@ -1,0 +1,48 @@
+version: "3.6"
+services:
+  nginx:
+    build: ./nginx
+    restart: always
+    ports:
+      - 80:80
+      - 443:443
+    links:
+      - php-fpm
+    volumes:
+      - /Users/admin/code/transport:/usr/share/nginx/transport
+  php-fpm:
+    build: ./php
+    restart: always
+    ports:
+      - 9000:9000
+    volumes:
+      - /Users/admin/code/transport:/usr/share/nginx/transport
+    links:
+      - mysql
+      - redis
+  redis:
+    build: ./redis
+    restart: always
+    ports:
+      - 6379:6379
+    environment:
+      REDIS_PROT: 6379
+  mysql:
+    build: ./mysql
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_USER: "admin"
+      MYSQL_PASSWORD: "admin"
+    volumes:
+     - db:/var/lib/mysql
+     - ./mysql/logs:/var/log/mysql
+     - ./mysql/conf.d:/etc/mysql/conf.d
+  node:
+    build: ./node
+    volumes:
+      - /Users/admin/code/transport:/usr/share/nginx/transport
+volumes:
+  db:

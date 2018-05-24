@@ -1,0 +1,5 @@
+FROM mysql
+
+MAINTAINER ikeykey
+
+EXPOSE 3306
