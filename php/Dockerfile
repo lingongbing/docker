@@ -1,15 +1,17 @@
 FROM php:7.2-fpm
 
-MAINTAINER ikeykey
+LABEL maintainer="lingongbign"
 
-COPY ./php.ini-development /usr/local/etc/php/php.ini
+ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update && apt-get install -y zip unzip curl git
-RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-RUN php composer-setup.php --install-dir=/usr/bin --filename=composer
-RUN php -r "unlink('composer-setup.php');"
+RUN apt-get update && apt-get install -y \
+        libfreetype6-dev \
+        libjpeg62-turbo-dev \
+        libpng-dev \
+    && docker-php-ext-install -j$(nproc) iconv \
+    && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
+    && docker-php-ext-install -j$(nproc) gd
 
-RUN pecl install swoole
-RUN echo "extension=swoole.so" >> /usr/local/etc/php/php.ini
-
-EXPOSE 9000
+RUN pecl install redis \
+    && pecl install xdebug \
+    && docker-php-ext-enable redis xdebug
