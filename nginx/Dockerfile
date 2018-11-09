@@ -1,7 +1,5 @@
 FROM nginx:alpine
 
-MAINTAINER ikeykey
+LABEL maintainer="lingongbign"
 
-COPY ./default.conf /etc/nginx/conf.d/default.conf
-
-EXPOSE 80 443
+ENV DEBIAN_FRONTEND=noninteractive

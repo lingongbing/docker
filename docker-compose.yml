@@ -5,40 +5,41 @@ services:
     restart: always
     ports:
       - 8080:80
+      - 8081:81
     links:
       - php-fpm
     volumes:
-      - /Users/admin/work/mllive-php-master:/usr/share/nginx/mllive-php-master
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - /Users/admin/work/mllive-php-master:/var/www/html/mllive-php-master
   php-fpm:
-    build: ./php
+    build: ./php5.6
     restart: always
     ports:
-      - 9002:9000
+      - 9999:9999
     volumes:
-      - /Users/admin/work/mllive-php-master:/usr/share/nginx/mllive-php-master
-      - ./php/php.ini-development:/usr/local/etc/php/php.ini
-    links:
-      - mysql
-      - redis
-  redis:
-    build: ./redis
-    restart: always
-    ports:
-      - 6380:6379
-    environment:
-      REDIS_PROT: 6379
-  mysql:
-    build: ./mysql
-    restart: always
-    ports:
-      - 3307:3306
-    environment:
-      MYSQL_ROOT_PASSWORD: "root"
-      MYSQL_USER: "admin"
-      MYSQL_PASSWORD: "admin"
-    volumes:
-     - db:/var/lib/mysql
-     - ./mysql/logs:/var/log/mysql
-     - ./mysql/conf.d:/etc/mysql/conf.d
-volumes:
-  db:
+      - /Users/admin/work/mllive-php-master:/var/www/html/mllive-php-master
+#    links:
+#      - mysql
+#      - redis
+#  redis:
+#    build: ./redis
+#    restart: always
+#    ports:
+#      - 6380:6379
+#    environment:
+#      REDIS_PROT: 6379
+#  mysql:
+#    build: ./mysql
+#    restart: always
+#    ports:
+#      - 3307:3306
+#    environment:
+#      MYSQL_ROOT_PASSWORD: "root"
+#      MYSQL_USER: "admin"
+#      MYSQL_PASSWORD: "admin"
+#    volumes:
+#     - db:/var/lib/mysql
+#     - ./mysql/logs:/var/log/mysql
+#     - ./mysql/conf.d:/etc/mysql/conf.d
+#volumes:
+#  db:
