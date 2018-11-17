@@ -4,42 +4,47 @@ services:
     build: ./nginx
     restart: always
     ports:
-      - 8080:80
-      - 8081:81
+    - 80:80
     links:
-      - php-fpm
+    - php-fpm
     volumes:
-      - ./nginx/conf.d:/etc/nginx/conf.d
-      - /Users/admin/work/mllive-php-master:/var/www/html/mllive-php-master
+    - ./nginx/conf.d:/etc/nginx/conf.d
+    - /Users/admin/work/mllive-php-master:/var/www/html/mllive-php-master
   php-fpm:
     build: ./php5.6
     restart: always
     ports:
-      - 9999:9999
+    - 9999:9999
     volumes:
-      - /Users/admin/work/mllive-php-master:/var/www/html/mllive-php-master
-#    links:
-#      - mysql
-#      - redis
-#  redis:
-#    build: ./redis
-#    restart: always
-#    ports:
-#      - 6380:6379
-#    environment:
-#      REDIS_PROT: 6379
-#  mysql:
-#    build: ./mysql
-#    restart: always
-#    ports:
-#      - 3307:3306
-#    environment:
-#      MYSQL_ROOT_PASSWORD: "root"
-#      MYSQL_USER: "admin"
-#      MYSQL_PASSWORD: "admin"
-#    volumes:
-#     - db:/var/lib/mysql
-#     - ./mysql/logs:/var/log/mysql
-#     - ./mysql/conf.d:/etc/mysql/conf.d
-#volumes:
-#  db:
+    - ./php5.6/php.ini-${ENV}:/usr/local/etc/php/php.ini
+    - ./php5.6/conf.d:/usr/local/etc/php/conf.d
+    - /Users/admin/work/mllive-php-master:/var/www/html/mllive-php-master
+    links:
+    - db
+    - redis
+  redis:
+    image: redis:alpine
+    restart: always
+    ports:
+    - 6379:6379
+    environment:
+      REDIS_PROT: 6379
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    ports:
+    - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+    - db:/var/lib/mysql
+    - ./mysql/logs:/var/log/mysql
+    - ./mysql/conf.d:/etc/mysql/conf.d
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+    - 8888:8080
+volumes:
+  db:

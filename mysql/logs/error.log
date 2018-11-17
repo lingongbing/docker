@@ -77,3 +77,114 @@ mbind: Operation not permitted
 2018-11-06T02:45:36.925588Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
 2018-11-06T02:45:36.998747Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.11'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
 2018-11-06T03:24:41.478569Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.11)  MySQL Community Server - GPL.
+2018-11-17T14:46:27.788655Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2018-11-17T14:46:27.790202Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.11) initializing of server in progress as process 27
+mbind: Operation not permitted
+mbind: Operation not permitted
+2018-11-17T14:46:31.579382Z 5 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+2018-11-17T14:46:36.096463Z 0 [System] [MY-013170] [Server] /usr/sbin/mysqld (mysqld 8.0.11) initializing of server has completed
+2018-11-17T14:46:38.133828Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2018-11-17T14:46:38.133967Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.11) starting as process 78
+mbind: Operation not permitted
+mbind: Operation not permitted
+2018-11-17T14:46:38.570487Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2018-11-17T14:46:38.575932Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2018-11-17T14:46:38.607308Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.11'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+2018-11-17T14:46:47.316862Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.11)  MySQL Community Server - GPL.
+2018-11-17T14:46:47.686473Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2018-11-17T14:46:47.686605Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.11) starting as process 1
+mbind: Operation not permitted
+mbind: Operation not permitted
+2018-11-17T14:46:48.058316Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2018-11-17T14:46:48.061612Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2018-11-17T14:46:48.084208Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.11'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2018-11-17T14:47:52.462074Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.11)  MySQL Community Server - GPL.
+2018-11-17T14:47:58.959372Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2018-11-17T14:47:58.959509Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.11) starting as process 1
+mbind: Operation not permitted
+mbind: Operation not permitted
+2018-11-17T14:47:59.428716Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2018-11-17T14:47:59.434417Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2018-11-17T14:47:59.486569Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.11'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2018-11-17T14:49:15.773232Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.11)  MySQL Community Server - GPL.
+2018-11-17T14:49:21.058965Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2018-11-17T14:49:21.059098Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.11) starting as process 1
+mbind: Operation not permitted
+mbind: Operation not permitted
+2018-11-17T14:49:21.621037Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2018-11-17T14:49:21.626196Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2018-11-17T14:49:21.654650Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.11'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2018-11-17T14:49:44.348471Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.11)  MySQL Community Server - GPL.
+2018-11-17T14:49:49.710790Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2018-11-17T14:49:49.710936Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.11) starting as process 1
+mbind: Operation not permitted
+mbind: Operation not permitted
+2018-11-17T14:49:50.096079Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2018-11-17T14:49:50.102396Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2018-11-17T14:49:50.154710Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.11'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2018-11-17T14:50:07.079411Z 8 [Warning] [MY-010055] [Server] IP address '172.18.0.1' could not be resolved: Name or service not known
+mbind: Operation not permitted
+2018-11-17T14:51:38.700822Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 11  user: 'root'.
+2018-11-17T14:51:40.090055Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.11)  MySQL Community Server - GPL.
+2018-11-17T14:51:45.020286Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2018-11-17T14:51:45.020430Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.11) starting as process 1
+mbind: Operation not permitted
+mbind: Operation not permitted
+2018-11-17T14:51:45.370960Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2018-11-17T14:51:45.374578Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2018-11-17T14:51:45.433582Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.11'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2018-11-17T14:52:09.582639Z 8 [Warning] [MY-010055] [Server] IP address '172.18.0.1' could not be resolved: Name or service not known
+mbind: Operation not permitted
+mbind: Operation not permitted
+2018-11-17T14:57:50.072821Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 11  user: 'root'.
+2018-11-17T14:57:50.077118Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 12  user: 'root'.
+2018-11-17T14:57:51.847165Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.11)  MySQL Community Server - GPL.
+2018-11-17T14:57:56.836728Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2018-11-17T14:57:56.836863Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.11) starting as process 1
+mbind: Operation not permitted
+mbind: Operation not permitted
+2018-11-17T14:57:57.269017Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2018-11-17T14:57:57.276272Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2018-11-17T14:57:57.312552Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.11'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2018-11-17T15:01:13.929872Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.11)  MySQL Community Server - GPL.
+2018-11-17T15:02:34.210616Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2018-11-17T15:02:34.210751Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.11) starting as process 1
+mbind: Operation not permitted
+mbind: Operation not permitted
+2018-11-17T15:02:34.871173Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2018-11-17T15:02:34.873904Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2018-11-17T15:02:34.895858Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.11'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2018-11-17T15:03:19.555050Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.11)  MySQL Community Server - GPL.
+2018-11-17T15:03:24.994576Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2018-11-17T15:03:24.994710Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.11) starting as process 1
+mbind: Operation not permitted
+mbind: Operation not permitted
+2018-11-17T15:03:25.348125Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2018-11-17T15:03:25.351530Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2018-11-17T15:03:25.374376Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.11'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+mbind: Operation not permitted
+2018-11-17T15:13:05.312353Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.11)  MySQL Community Server - GPL.
+2018-11-17T15:13:10.555722Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2018-11-17T15:13:10.555855Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.11) starting as process 1
+mbind: Operation not permitted
+mbind: Operation not permitted
+2018-11-17T15:13:11.275833Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2018-11-17T15:13:11.282009Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2018-11-17T15:13:11.317504Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.11'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2018-11-17T15:18:08.208978Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.11)  MySQL Community Server - GPL.
+2018-11-17T15:18:12.857682Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2018-11-17T15:18:12.857821Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.11) starting as process 1
+mbind: Operation not permitted
+mbind: Operation not permitted
+2018-11-17T15:18:13.213349Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2018-11-17T15:18:13.217649Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2018-11-17T15:18:13.243326Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.11'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2018-11-17T15:24:39.970078Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.11)  MySQL Community Server - GPL.
+2018-11-17T15:24:45.393018Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2018-11-17T15:24:45.393148Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.11) starting as process 1
+mbind: Operation not permitted
+mbind: Operation not permitted
+2018-11-17T15:24:45.983155Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2018-11-17T15:24:45.988265Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2018-11-17T15:24:46.027163Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.11'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2018-11-17T15:26:01.955590Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.11)  MySQL Community Server - GPL.
