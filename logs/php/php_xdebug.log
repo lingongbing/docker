@@ -1,0 +1,70 @@
+Log opened at 2018-12-13 13:10:32
+I: Connecting to configured address/port: docker.for.mac.localhost:9009.
+I: Connected to client. :-)
+-> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/blog/public/new.php" language="PHP" xdebug:language_version="7.2.12" protocol_version="1.0" appid="6" idekey="PHPSTORM"><engine version="2.6.1"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[http://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2018 by Derick Rethans]]></copyright></init>
+
+<- feature_set -i 1 -n show_hidden -v 1
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="show_hidden" success="1"></response>
+
+<- feature_set -i 2 -n max_depth -v 1
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_depth" success="1"></response>
+
+<- feature_set -i 3 -n max_children -v 100
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="max_children" success="1"></response>
+
+<- feature_set -i 4 -n extended_properties -v 1
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="extended_properties" success="1"></response>
+
+<- feature_set -i 5 -n notify_ok -v 1
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="5" feature="notify_ok" success="1"></response>
+
+<- stdout -i 6 -c 1
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="stdout" transaction_id="6" success="1"></response>
+
+<- status -i 7
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="status" transaction_id="7" status="starting" reason="ok"></response>
+
+<- step_into -i 8
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="8" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/blog/public/new.php" lineno="2"></xdebug:message></response>
+
+<- eval -i 9 -- aXNzZXQoJF9TRVJWRVJbJ1BIUF9JREVfQ09ORklHJ10p
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="eval" transaction_id="9"><property type="bool"><![CDATA[0]]></property></response>
+
+<- eval -i 10 -- aXNzZXQoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="eval" transaction_id="10"><property type="bool"><![CDATA[1]]></property></response>
+
+<- eval -i 11 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="eval" transaction_id="11"><property type="string" size="9" encoding="base64"><![CDATA[bG9jYWxob3N0]]></property></response>
+
+<- eval -i 12 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9QT1JUJ10p
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="eval" transaction_id="12"><property type="string" size="2" encoding="base64"><![CDATA[ODA=]]></property></response>
+
+<- eval -i 13 -- KHN0cmluZykoJF9TRVJWRVJbJ1JFUVVFU1RfVVJJJ10p
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="eval" transaction_id="13"><property type="string" size="8" encoding="base64"><![CDATA[L25ldy5waHA=]]></property></response>
+
+<- breakpoint_set -i 14 -t line -f file:///var/www/html/blog/public/this.php -n 24
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="14" id="60001"></response>
+
+<- stack_get -i 15
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="15"><stack where="{main}" level="0" type="file" filename="file:///var/www/html/blog/public/new.php" lineno="2"></stack></response>
+
+<- run -i 16
+-> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" name="error"><xdebug:message filename="file:///var/www/html/blog/public/new.php" lineno="2" type="Fatal error"><![CDATA[Uncaught Error: Class 'SimpleClass' not found]]></xdebug:message></notify>
+
+-> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[WC1Qb3dlcmVkLUJ5OiBQSFAvNy4yLjEy]]></stream>
+
+-> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+-> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[Q29udGVudC10eXBlOiB0ZXh0L2h0bWw7IGNoYXJzZXQ9VVRGLTg=]]></stream>
+
+-> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+-> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+-> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[PGJyIC8+Cjxmb250IHNpemU9JzEnPjx0YWJsZSBjbGFzcz0neGRlYnVnLWVycm9yIHhlLXVuY2F1Z2h0LWV4Y2VwdGlvbicgZGlyPSdsdHInIGJvcmRlcj0nMScgY2VsbHNwYWNpbmc9JzAnIGNlbGxwYWRkaW5nPScxJz4KPHRyPjx0aCBhbGlnbj0nbGVmdCcgYmdjb2xvcj0nI2Y1NzkwMCcgY29sc3Bhbj0iNSI+PHNwYW4gc3R5bGU9J2JhY2tncm91bmQtY29sb3I6ICNjYzAwMDA7IGNvbG9yOiAjZmNlOTRmOyBmb250LXNpemU6IHgtbGFyZ2U7Jz4oICEgKTwvc3Bhbj4gRmF0YWwgZXJyb3I6IFVuY2F1Z2h0IEVycm9yOiBDbGFzcyAnU2ltcGxlQ2xhc3MnIG5vdCBmb3VuZCBpbiAvdmFyL3d3dy9odG1sL2Jsb2cvcHVibGljL25ldy5waHAgb24gbGluZSA8aT4yPC9pPjwvdGg+PC90cj4KPHRyPjx0aCBhbGlnbj0nbGVmdCcgYmdjb2xvcj0nI2Y1NzkwMCcgY29sc3Bhbj0iNSI+PHNwYW4gc3R5bGU9J2JhY2tncm91bmQtY29sb3I6ICNjYzAwMDA7IGNvbG9yOiAjZmNlOTRmOyBmb250LXNpemU6IHgtbGFyZ2U7Jz4oICEgKTwvc3Bhbj4gRXJyb3I6IENsYXNzICdTaW1wbGVDbGFzcycgbm90IGZvdW5kIGluIC92YXIvd3d3L2h0bWwvYmxvZy9wdWJsaWMvbmV3LnBocCBvbiBsaW5lIDxpPjI8L2k+PC90aD48L3RyPgo8dHI+PHRoIGFsaWduPSdsZWZ0JyBiZ2NvbG9yPScjZTliOTZlJyBjb2xzcGFuPSc1Jz5DYWxsIFN0YWNrPC90aD48L3RyPgo8dHI+PHRoIGFsaWduPSdjZW50ZXInIGJnY29sb3I9JyNlZWVlZWMnPiM8L3RoPjx0aCBhbGlnbj0nbGVmdCcgYmdjb2xvcj0nI2VlZWVlYyc+VGltZTwvdGg+PHRoIGFsaWduPSdsZWZ0JyBiZ2NvbG9yPScjZWVlZWVjJz5NZW1vcnk8L3RoPjx0aCBhbGlnbj0nbGVmdCcgYmdjb2xvcj0nI2VlZWVlYyc+RnVuY3Rpb248L3RoPjx0aCBhbGlnbj0nbGVmdCcgYmdjb2xvcj0nI2VlZWVlYyc+TG9jYXRpb248L3RoPjwvdHI+Cjx0cj48dGQgYmdjb2xvcj0nI2VlZWVlYycgYWxpZ249J2NlbnRlcic+MTwvdGQ+PHRkIGJnY29sb3I9JyNlZWVlZWMnIGFsaWduPSdjZW50ZXInPjAuMDc4OTwvdGQ+PHRkIGJnY29sb3I9JyNlZWVlZWMnIGFsaWduPSdyaWdodCc+Mzk3NzkyPC90ZD48dGQgYmdjb2xvcj0nI2VlZWVlYyc+e21haW59KCAgKTwvdGQ+PHRkIHRpdGxlPScvdmFyL3d3dy9odG1sL2Jsb2cvcHVibGljL25ldy5waHAnIGJnY29sb3I9JyNlZWVlZWMnPi4uLi9uZXcucGhwPGI+OjwvYj4wPC90ZD48L3RyPgo8L3RhYmxlPjwvZm9udD4K]]></stream>
+
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="run" transaction_id="16" status="stopping" reason="ok"></response>
+
+<- run -i 17
+Log closed at 2018-12-13 13:10:32
+

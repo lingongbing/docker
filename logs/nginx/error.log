@@ -1,0 +1,110 @@
+2018/12/11 12:53:36 [error] 7#7: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:00:02 [error] 6#6: *1 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/logs/php.xdebug.log'" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /api HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:00:31 [error] 6#6: *1 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/logs/php.xdebug.log'" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /api HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:00:43 [error] 6#6: *1 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/logs/php.xdebug.log'" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:01:50 [error] 6#6: *8 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /_intellij_phpdebug_validator.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:02:00 [error] 6#6: *10 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /_intellij_phpdebug_validator.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:02:27 [error] 6#6: *12 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /public/_intellij_phpdebug_validator.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:02:28 [error] 6#6: *14 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /public/_intellij_phpdebug_validator.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:02:28 [error] 6#6: *16 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /public/_intellij_phpdebug_validator.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:02:28 [error] 6#6: *18 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /public/_intellij_phpdebug_validator.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:02:36 [error] 6#6: *20 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /public/_intellij_phpdebug_validator.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:02:37 [error] 6#6: *22 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /public/_intellij_phpdebug_validator.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:02:37 [error] 6#6: *24 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /public/_intellij_phpdebug_validator.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:02:37 [error] 6#6: *26 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /public/_intellij_phpdebug_validator.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:02:37 [error] 6#6: *28 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /public/_intellij_phpdebug_validator.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:02:47 [error] 6#6: *30 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/logs/php.xdebug.log'" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:03:11 [error] 6#6: *33 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/logs/php.xdebug.log'" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /_intellij_phpdebug_validator.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:03:39 [error] 6#6: *35 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/logs/php.xdebug.log'" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /_intellij_phpdebug_validator.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:04:38 [error] 6#6: *38 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/logs/php.xdebug.log'" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:05:47 [error] 6#6: *38 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:06:05 [error] 6#6: *42 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /var/www/html/blog/public/_intellij_phpdebug_validator.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:06:42 [error] 6#6: *44 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /_intellij_phpdebug_validator.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:06:43 [error] 6#6: *46 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/logs/php.xdebug.log'" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /_intellij_phpdebug_validator.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:06:43 [error] 6#6: *46 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/logs/php.xdebug.log'" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /_intellij_phpdebug_validator.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:07:54 [error] 6#6: *49 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:09:28 [error] 6#6: *49 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:09:56 [error] 6#6: *54 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/logs/php.xdebug.log'" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /_intellij_phpdebug_validator.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:10:12 [error] 6#6: *49 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/logs/php.xdebug.log'" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:14:34 [error] 6#6: *59 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/logs/php.xdebug.log'" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:15:15 [error] 6#6: *59 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/logs/php.xdebug.log'" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /api/user HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:15:15 [warn] 6#6: *59 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/1/00/0000000001 while reading upstream, client: 172.18.0.1, server: localhost, request: "GET /api/user HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:15:33 [error] 6#6: *59 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/logs/php.xdebug.log'" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /api/user HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/11 13:15:51 [error] 6#6: *59 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/logs/php.xdebug.log'" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /api/user HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/12 10:00:24 [error] 6#6: *70 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/logs/php.xdebug.log'" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /api/user HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/12 10:00:24 [warn] 6#6: *70 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/2/00/0000000002 while reading upstream, client: 172.18.0.1, server: localhost, request: "GET /api/user HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2018/12/13 11:56:06 [error] 6#6: *73 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/logs/php.xdebug.log'.
+PHP message: PHP Deprecated:  Non-static method A::foo() should not be called statically in /var/www/html/blog/public/this.php on line 27
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/blog/public/this.php:0
+PHP message: PHP Deprecated:  Non-static method A::foo() should not be called statically in /var/www/html/blog/public/this.php on line 20
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/blog/public/this.php:0
+PHP message: PHP   2. B->bar() /var/www/html/blog/public/this.php:30
+PHP message: PHP Deprecated:  Non-static method B::bar() should not be called statically in /var/www/html/blog/public/this.php on line 32
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/blog/public/this.php:0
+PHP message: PHP Deprecated:  Non-static method A::foo() should not be called statically in /var/www/html/blog/public/this.php on line 20
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/blog/public/this.php:0
+PHP message: PHP   2. B::bar() /var/www/html/blog/public/this.php:32" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /this.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "127.0.0.1"
+2018/12/13 11:56:24 [error] 6#6: *73 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/logs/php.xdebug.log'.
+PHP message: PHP Deprecated:  Non-static method A::foo() should not be called statically in /var/www/html/blog/public/this.php on line 27
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/blog/public/this.php:0
+PHP message: PHP Deprecated:  Non-static method A::foo() should not be called statically in /var/www/html/blog/public/this.php on line 20
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/blog/public/this.php:0
+PHP message: PHP   2. B->bar() /var/www/html/blog/public/this.php:30
+PHP message: PHP Deprecated:  Non-static method B::bar() should not be called statically in /var/www/html/blog/public/this.php on line 32
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/blog/public/this.php:0
+PHP message: PHP Deprecated:  Non-static method A::foo() should not be called statically in /var/www/html/blog/public/this.php on line 20
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/blog/public/this.php:0
+PHP message: PHP   2. B::bar() /var/www/html/blog/public/this.php:32" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /this.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "127.0.0.1"
+2018/12/13 11:57:06 [error] 6#6: *73 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/logs/php.xdebug.log'.
+PHP message: PHP Deprecated:  Non-static method A::foo() should not be called statically in /var/www/html/blog/public/this.php on line 27
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/blog/public/this.php:0
+PHP message: PHP Deprecated:  Non-static method A::foo() should not be called statically in /var/www/html/blog/public/this.php on line 20
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/blog/public/this.php:0
+PHP message: PHP   2. B->bar() /var/www/html/blog/public/this.php:30
+PHP message: PHP Deprecated:  Non-static method B::bar() should not be called statically in /var/www/html/blog/public/this.php on line 32
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/blog/public/this.php:0
+PHP message: PHP Deprecated:  Non-static method A::foo() should not be called statically in /var/www/html/blog/public/this.php on line 20
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/blog/public/this.php:0
+PHP message: PHP   2. B::bar() /var/www/html/blog/public/this.php:32" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /this.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "127.0.0.1"
+2018/12/13 11:59:01 [error] 6#6: *79 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/logs/php.xdebug.log'.
+PHP message: PHP Deprecated:  Non-static method A::foo() should not be called statically in /var/www/html/blog/public/this.php on line 32
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/blog/public/this.php:0
+PHP message: PHP Deprecated:  Non-static method A::foo() should not be called statically in /var/www/html/blog/public/this.php on line 25
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/blog/public/this.php:0
+PHP message: PHP   2. B->bar() /var/www/html/blog/public/this.php:35
+PHP message: PHP Deprecated:  Non-static method B::bar() should not be called statically in /var/www/html/blog/public/this.php on line 37
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/blog/public/this.php:0
+PHP message: PHP Deprecated:  Non-static method A::foo() should not be called statically in /var/www/html/blog/public/this.php on line 25
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/blog/public/this.php:0
+PHP message: PHP   2. B::bar() /var/www/html/blog/public/this.php:37" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /this.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "127.0.0.1"
+2018/12/13 12:00:01 [error] 6#6: *79 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/logs/php.xdebug.log'.
+PHP message: PHP Fatal error:  Uncaught Error: Class 'SimpleClass' not found in /var/www/html/blog/public/new.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/blog/public/new.php on line 2" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /new.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "127.0.0.1"
+2018/12/13 12:00:49 [error] 6#6: *79 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/logs/php.xdebug.log'.
+PHP message: PHP Fatal error:  Uncaught Error: Class 'Foo' not found in /var/www/html/blog/public/new.php:9
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/blog/public/new.php on line 9" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /new.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "127.0.0.1"
+2018/12/13 12:56:40 [error] 6#6: *86 FastCGI sent in stderr: "PHP message: Xdebug could not open the remote debug file '/var/logs/php.xdebug.log'.
+PHP message: PHP Fatal error:  Uncaught Error: Class 'SimpleClass' not found in /var/www/html/blog/public/new.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/blog/public/new.php on line 2" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /new.php HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "127.0.0.1"

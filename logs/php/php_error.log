@@ -1,0 +1,4 @@
+[13-Dec-2018 13:10:32 UTC] PHP Fatal error:  Uncaught Error: Class 'SimpleClass' not found in /var/www/html/blog/public/new.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/blog/public/new.php on line 2

@@ -1,0 +1,6 @@
+2018-12-13 13:11:38,084 CRIT Supervisor running as root (no user in config file)
+2018-12-13 13:11:38,085 INFO Included extra file "/etc/supervisor/conf.d/supervisord.conf" during parsing
+2018-12-13 13:11:38,103 INFO RPC interface 'supervisor' initialized
+2018-12-13 13:11:38,104 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2018-12-13 13:11:38,105 INFO daemonizing the supervisord process
+2018-12-13 13:11:38,106 INFO supervisord started with pid 16

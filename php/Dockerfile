@@ -1,27 +1,33 @@
-FROM ubuntu:18.04
+FROM php:7.2-fpm
 
 LABEL maintainer="lingongbign"
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update \
-    && apt-get install -y gnupg tzdata \
-    && echo "UTC" > /etc/timezone \
-    && dpkg-reconfigure -f noninteractive tzdata
+RUN apt-get update && apt-get install -y \
+    libfreetype6-dev \
+    libjpeg62-turbo-dev \
+    libpng-dev \
+    git \
+    wget \
+    supervisor \
+    && docker-php-ext-install -j$(nproc) iconv \
+    && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
+    && docker-php-ext-install -j$(nproc) gd \
+    && docker-php-ext-install pdo_mysql \
+    && docker-php-ext-install bcmath \
+    && pecl install redis \
+    && pecl install xdebug \
+    && docker-php-ext-enable redis xdebug
 
-RUN apt-get update \
-    && apt-get install -y curl zip unzip git supervisor sqlite3 \
-       php7.2-fpm php7.2-cli \
-       php7.2-pgsql php7.2-sqlite3 php7.2-gd \
-       php7.2-curl php7.2-memcached \
-       php7.2-imap php7.2-mysql php7.2-mbstring \
-       php7.2-xml php7.2-zip php7.2-bcmath php7.2-soap \
-       php7.2-intl php7.2-readline php7.2-xdebug \
-       php-msgpack php-igbinary \
-    && php -r "readfile('http://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer \
-    && mkdir /run/php \
-    && apt-get -y autoremove \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+# Remove lists
+RUN rm -rf /var/lib/apt/lists/*
 
+# Install Composer
+RUN php -r "readfile('https://getcomposer.org/installer');" | php -- --install-dir=/usr/local/bin --filename=composer \
+    && chmod +x /usr/local/bin/composer
+
+# Up Supervisor
 CMD ["/usr/bin/supervisord","-c","/etc/supervisor/conf.d/supervisord.conf"]
+
+CMD ["php-fpm"]

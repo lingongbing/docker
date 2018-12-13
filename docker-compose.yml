@@ -10,15 +10,20 @@ services:
       - php-fpm
     volumes:
       - ./nginx/conf.d:/etc/nginx/conf.d
-      - /Users/lingb/code:/var/www
       - ./logs/nginx:/var/log/nginx
+      - /Users/lingb/code/html:/var/www/html
   php-fpm:
     build: ./php
     restart: always
     volumes:
-      - ./php/supervisord.conf:/etc/supervisor/conf.d/supervisord.conf
       - ./php/php-fpm.conf:/etc/php/7.2/fpm/php-fpm.conf
-      - /Users/lingb/code:/var/www
+      - ./php/php.ini-${ENV}:/usr/local/etc/php/php.ini
+      - ./php/conf.d:/usr/local/etc/php/conf.d
+      - ./php/supervisord.conf:/etc/supervisor/conf.d/supervisord.conf
+      - ./logs/php:/var/log
+      - /Users/lingb/code/html:/var/www/html
+    ports:
+      - 9000:9000
     links:
       - db
       - cache
